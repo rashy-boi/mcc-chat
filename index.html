@@ -20,11 +20,11 @@
             overflow: hidden;
         }
         .chat-container {
-            width: 90%;       /* Takes up 90% of screen width */
-            max-width: 800px; /* Limits max width so it doesn't get too stretched on desktop */
-            height: 80vh;     /* Takes up 80% of the screen height */
+            width: 95%;       /* Takes up 95% of screen width on mobile */
+            max-width: 900px; /* Nice wide desktop size */
+            height: 85vh;     /* Tall height on the screen */
             border-radius: 12px; /* Smooth rounded corners */
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Drop shadow effect */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6); /* Drop shadow effect */
             overflow: hidden;
             border: 2px solid #333;
         }
@@ -38,13 +38,9 @@
 <body>
 
     <div class="chat-container">
-        <script src="https://minnit.chat/js/embed.js?c=1772345192" defer></script><span style="display: none;" class="minnit-chat-sembed" data-chatname="https://organizations.minnit.chat/406692977852640/c/Main?embed" data-style="width:90%; height:500px; max-height:90vh;" data-version="1.55">Chat</span><p class="powered-by-minnit"><a href="https://minnit.chat" target="_blank">Add a group chat to your website with Minnit Chat</a></p>
-
-
+        <!-- Using a direct clean iframe to fix the centering bugs -->
+        <iframe src="https://organizations.minnit.chat/406692977852640/c/Main?embed" allow="geolocation; microphone; camera; fullscreen"></iframe>
     </div>
 
 </body>
 </html>
-
-  
-
